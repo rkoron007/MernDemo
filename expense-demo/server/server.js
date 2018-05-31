@@ -13,6 +13,6 @@ app.use(bodyParser.json({ limit: '50mb' }));
 app.use(bodyParser.urlencoded({ limit: '50mb', extended: false }));
 app.use('/', router);
 
-mongoose.connect("mongodb:rkoron007:Mousiepie1@ds064198.mlab.com:64198/expense-demo");
+mongoose.connect('mongodb://apple:PASSWORD1@ds064198.mlab.com:64198/expense-demo');
 
 module.exports = app;

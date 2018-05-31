@@ -42,7 +42,7 @@ router.get('/delete', function (req, res) {
         if (err)
             res.send(err)
         res.send('Expense successfully deleted!');
-    })
+    });
 });
 router.get('/getAll', function (req, res) {
     var monthRec = req.query.month;
